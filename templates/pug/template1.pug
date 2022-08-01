@@ -1,0 +1,60 @@
+doctype html
+html(lang='en')
+	head
+	body
+		.container
+			.d-inline-block
+				.header
+					.list
+						.full-name
+							span.first-name #{fullName}
+						.contact-info
+							span.email Email: 
+							span.email-val #{proEmail}
+							span.separator
+							span.phone Phone: 
+							span.phone-val #{phone}
+						.about
+							span.position #{headline} 
+							span.desc
+								| #{summary}
+				.photo
+					img(width='200px' height='200px' crossorigin='anonymous' src=photo)
+			.details
+				.section
+					.section__title Experiences
+						.section__list
+							each val,index in experiences
+								.section__list-item
+									.addr=val.title
+									.name=val.company
+									.duration=val.startDate + "-" + val.endDate
+									p=val.description
+				.section
+					.section__title Certifications
+						.section__list
+							each val,index in certifications
+								.section__list-item
+									.addr=val.title
+									.duration=val.date
+				.section
+					.section__title Education
+						.section__list
+							each val,index in education
+								.section__list-item
+									.addr=val.diploma + " / " + val.university
+									.duration=val.startDate + "-" + val.endDate
+				.section
+					.section__title Skills
+						.skills
+							each val,index in skills
+								.skills__item
+									.name=val.title
+				.section
+					.section__title Interests
+						.section__list
+							.section__list-item
+								.duration
+									| #{interests}
+			.watermark
+				img(src='https://ptway.net/static/media/PTway_Logo.79751c80.svg')

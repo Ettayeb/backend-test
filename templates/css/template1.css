@@ -1,0 +1,108 @@
+.d-inline-block {
+  display: flex;
+}
+.container {
+  max-width: 700px;
+  background: #fff;
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;
+  padding: 40px;
+}
+.header {
+  margin-bottom: 30px;
+  width: 60%;
+}
+.header .full-name {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.header .first-name {
+  font-weight: 700;
+}
+.header .last-name {
+  font-weight: 300;
+}
+.header .contact-info {
+  margin-bottom: 20px;
+}
+.header .email, .header .phone {
+  color: #999;
+  font-weight: 300;
+}
+.header .separator {
+  height: 10px;
+  display: inline-block;
+  border-left: 2px solid #999;
+  margin: 0px 10px;
+}
+.header .position {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.photo {
+  text-align: right;
+  width: 40%;
+}
+.details {
+  line-height: 20px;
+}
+.details .section {
+  margin-bottom: 10px;
+}
+.details .section:last-of-type {
+  margin-bottom: 10px;
+}
+.details .section__title {
+  color: #54AFE4;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.details .section__list-item {
+  margin-bottom: 10px;
+}
+.details .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+.details .left, .details .right {
+  vertical-align: top;
+  display: inline-block;
+}
+
+
+.details .name {
+  font-weight: bold;
+}
+
+
+.details .skills__item {
+  margin-bottom: 5px;
+}
+
+
+.addr{
+  text-transform: none;
+color: black;
+font-weight: bold;
+
+}
+
+.name,.duration{
+  text-transform: none;
+color: black;
+font-weight: normal;
+}
+.section__list-item p {
+  text-transform: none;
+  color: black;
+  font-weight: normal;  
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.watermark{
+  text-align: right;
+}

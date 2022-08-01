@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+ head
+ body
+  .rela-block.page
+   .rela-block.top-bar
+    .caps.name
+      .abs-center #{fullName}
+   .side-bar
+     .mugshot
+       .logo
+         img(src=photo crossorigin="anonymous" width='190px' height='190px')
+     p #{address}
+     p Birth Date: #{birthDate}
+     p #{phone}
+     p #{proEmail}
+     p.rela-block.caps.side-header Education 
+     each val,index in education 
+      p.rela-block.list-thing=val.diploma + " at " + val.university + ": " + val.startDate + "-" + val.endDate
+     p.rela-block.caps.side-header Skills 
+     each val,index in skills 
+      p.rela-block.list-thing=val.title
+     p.rela-block.caps.side-header Interests
+     p.rela-block.list-thing #{interests}
+   .rela-block.content-container
+     h2.rela-block.caps.title #{headline}
+     .rela-block.separator
+     .rela-block.caps.greyed Profile
+     p.long-margin
+       | #{summary}
+     .rela-block.caps.greyed Experience
+     each val,index in experiences
+      h3=val.title +  "-" + val.company
+      p.light=val.startDate + " / " + val.endDate
+      p=val.description  
+     .rela-block.caps.greyed Certifications
+     each val,index in certifications
+      h3=val.title
+      p.light=val.date
+     .watermark
+      img(src='https://ptway.net/static/media/PTway_Logo.79751c80.svg')
