@@ -8,7 +8,7 @@ const profileInputUpdate = Joi.object({
     headline: Joi.string().required(),
     birthDate: Joi.string().required(),
     fullName: Joi.string().required(),
-    photo: Joi.string().required(),
+    photo: Joi.string().optional(),
     proEmail: Joi.string().required(),
     summary: Joi.string().required(),
     phone: Joi.string().required(),
